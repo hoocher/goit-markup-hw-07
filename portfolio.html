@@ -13,6 +13,7 @@
         https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         " rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
     <title>WebStudio - Portfolio</title>
 </head>
 
@@ -20,21 +21,29 @@
     <!--! Header -->
     <header class="header">
         <div class="container header-container">
+            <a class="link logo-header" href="./index.html">Web<span class="logo-header-b">Studio</span>
+            </a>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg width="32" height="22" class="menu-icon">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
             <nav class="nav">
-                <a class="logo-header link" href="./index.html">Web<span class="logo-header-b">Studio</span></a>
-                <ul class="list nav-list">
-                    <li class="nav-item">
-                        <a class="link nav-link" href="./index.html">Studio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link nav-link current" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="link nav-link" href="">Contacts</a>
-                    </li>
-                </ul>
+                <div class="pc-nav">
+                    <ul class="list nav-list">
+                        <li class="nav-item">
+                            <a class="link nav-link current" href="./index.html">Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link nav-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="link nav-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            <address class="adress">
+            <address class="adress-pc">
                 <ul class="list adress-list">
                     <li class="adress-list-item">
                         <a class="link contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -44,6 +53,71 @@
                     </li>
                 </ul>
             </address>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="close-mob-menu-btn" data-menu-close>
+                <svg width="8" height="8">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div>
+                <nav class="mob-menu-nav">
+                    <ul class="list mob-menu-list">
+                        <li class="mob-menu-item">
+                            <a class="link mob-menu-link mob-link-current" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="link mob-menu-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a class="link mob-menu-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <address class="adress-mob ">
+                    <ul class="list adress-mob-list">
+                        <li class="adress-mob-list-item">
+                            <a class="link telephone-mob-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="adress-mob-list-item">
+                            <a class="link email-mob-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-soc-list list">
+                    <li class="mob-soc-item">
+                        <a class="mob-soc-link link" href="">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item">
+                        <a class="mob-soc-link link" href="">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item">
+                        <a class="mob-soc-link link" href="">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-item">
+                        <a class="mob-soc-link link" href="">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
     <main>
