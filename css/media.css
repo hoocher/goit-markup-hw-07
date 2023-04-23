@@ -1,9 +1,12 @@
 @media screen and (min-width:428px) {
     .container {
-        width: 428px;
+        max-width: 428px;
     }
 
+
 }
+
+
 
 @media screen and (min-width:428px) and(max-width:767px) {
     .header-container {
@@ -11,14 +14,38 @@
     }
 
 
+
 }
 
+@media screen and (max-width:767px) {
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-title {
+        text-align: center;
+    }
+
+    .hero-title {
+        width: 320px;
+        margin-bottom: 72px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+    }
+}
 
 
 @media screen and (min-width:768px) {
 
     .hero {
+
         background-image: radial-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet.jpg);
+        max-width: 768px;
+        height: 436px;
+        margin: 0 auto;
+        padding: 112px 0;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -50,6 +77,8 @@
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
+        max-width: 496px;
+        margin-bottom: 36px;
     }
 
     .features-list {
@@ -63,9 +92,12 @@
         margin-bottom: 0px;
     }
 
+    .features-item-title {
+        text-align: left;
+    }
+
     .footer-wrp-container {
         display: flex;
-        text-align: left;
     }
 
     .footer-wrp1 {
@@ -113,6 +145,7 @@
     .footer-container {
         display: flex;
         flex-wrap: wrap;
+        max-width: 530px;
     }
 
     .footer-subscribe {
@@ -149,6 +182,10 @@
 
     .hero {
         background-image: radial-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        margin: 0 auto;
+        max-width: 1440px;
+        height: 600px;
+        padding: 188px 0;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -192,8 +229,13 @@
         align-items: center;
     }
 
-    .hero-container {
-        padding: 188px;
+    .hero-container {}
+
+    .hero-title {
+        margin-bottom: 48px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
     }
 
     .features-list {
