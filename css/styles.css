@@ -839,6 +839,8 @@ body {
 .features-description {
     font-weight: 500;
     line-height: 1.5;
+    max-width: 396px;
+    margin: 0 auto;
 }
 
 .features-wrap {
