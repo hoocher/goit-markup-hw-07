@@ -77,8 +77,6 @@ body {
 }
 
 .container {
-    width: 100%;
-
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -399,11 +397,12 @@ body {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
-    width: 100%;
+
     background-color: var(--common-background-color);
 }
 
 .header-container {
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;

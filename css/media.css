@@ -1,12 +1,10 @@
-@media screen and (min-width:428px) {
+@media screen and (min-width:428px) {}
+
+@media screen and (max-width:427px) {
     .container {
         max-width: 428px;
     }
-
-
 }
-
-
 
 @media screen and (min-width:428px) and(max-width:767px) {
     .header-container {
