@@ -1,10 +1,10 @@
-@media screen and (min-width:428px) {}
-
-@media screen and (max-width:427px) {
+@media screen and (min-width:428px) {
     .container {
-        max-width: 428px;
+        width: 428px;
     }
 }
+
+@media screen and (max-width:427px) {}
 
 @media screen and (min-width:428px) and(max-width:767px) {
     .header-container {
@@ -16,6 +16,8 @@
 }
 
 @media screen and (max-width:767px) {
+
+
     .logo-footer {
         display: flex;
         justify-content: center;
@@ -26,7 +28,7 @@
     }
 
     .hero-title {
-        width: 320px;
+        max-width: 320px;
         margin-bottom: 72px;
         font-weight: 700;
         font-size: 36px;
@@ -44,6 +46,7 @@
         height: 436px;
         margin: 0 auto;
         padding: 112px 0;
+        text-align: center;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -67,10 +70,12 @@
     }
 
     .customers-item {
-        width: calc((100% - 48px)/3);
+        width: 168px;
     }
 
-    .customers-list {}
+    .customers-list {
+        gap: 72px 24px;
+    }
 
     .hero-title {
         font-size: 56px;
@@ -261,12 +266,11 @@
 
     .footer-container {
         display: flex;
-        flex-wrap: no-wrap;
     }
 
     .footer-wrp-container {
         justify-content: space-between;
-        margin-right: 80px;
+
     }
 
     .footer-wrp1 {
@@ -275,6 +279,7 @@
 
     .footer-wrp2 {
         margin-bottom: 0;
+        margin-left: 120px;
     }
 
     .adress-pc {
